@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tabs Element (based on "Tabs Pattern | APG | WAI | W3C")</title>
+</head>
+
+<body>
+    <main>
+        <h1>Tabs Element (based on <a href="https://www.w3.org/WAI/ARIA/apg/patterns/tabs/">"Tabs Pattern | APG | WAI | W3C"</a>)</h1>
+
+        <section
+            id="section--parent-section"
+            aria-labelledby="parent-section"
+            is="tabs-element"
+        >
+            <h2
+                id="parent-section"
+                tabindex="-1"
+            >Parent Section</h2>
+
+            <p>Some (optional) preamble.</p>
+
+            <section
+                id="section--child-section-a"
+                aria-labelledby="child-section-a"
+            >
+                <h3
+                    id="child-section-a"
+                    tabindex="-1"
+                >Child Section A</h3>
+
+                <p>A paragraph.</p>
+
+                <ul>
+                    <li>A list</li>
+
+                    <li>With several</li>
+
+                    <li>Items</li>
+                </ul>
+            </section>
+
+            <section
+                id="section--child-section-b"
+                aria-labelledby="child-section-b"
+            >
+                <h3
+                    id="child-section-b"
+                    tabindex="-1"
+                >Child Section B</h3>
+
+                <p>Some other paragraph.</p>
+            </section>
+
+            <section
+                id="section--child-section-c"
+                aria-labelledby="child-section-c"
+            >
+                <h3
+                    id="child-section-c"
+                    tabindex="-1"
+                >Child Section C</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio libero corrupti quas voluptas commodi quibusdam veniam a, impedit maxime dolores numquam, quis aliquam ipsum officiis quam itaque facilis dolorem! Modi?</p>
+            </section>
+        </section>
+    </main>
+
+    <!-- A local copy of [WebReflection/custom-elements-builtin](https://github.com/WebReflection/custom-elements-builtin) -->
+    <script src="assets/js/webreflection-custom-elements-builtin-safari-polyfill.js"></script>
+
+    <script src="assets/js/custom-element-helpers.js"></script>
+
+    <script src="assets/js/tabs-element.js"></script>
+</body>
+</html>
